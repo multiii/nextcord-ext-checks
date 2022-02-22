@@ -45,7 +45,7 @@ Examples:
     @bar.error
     async def bar_error(ctx, error):
         if isinstance(error, checks.NotEnoughArgs):
-            await ctx.send("You have to Enter 3 Arguments (ctx, x, and y) for the command to work")
+            await ctx.send(f"You have to Enter 3 Arguments ({', '.join(list(error.args))}) for the command to work")
         else:
             raise error
             
