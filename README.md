@@ -1,1 +1,0 @@
-# nextcord-ext-checks
